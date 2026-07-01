@@ -10,10 +10,11 @@ permissions:
   pages: write
   id-token: write
 
-# Only one deploy at a time; cancel in-progress runs for the latest commit.
+# Allow one concurrent deployment; never cancel an in-progress Pages deploy
+# (cancelling mid-deploy can leave the Pages queue stuck in "queued").
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 env:
   GODOT_VERSION: "4.7"
