@@ -1,13 +1,18 @@
-# Hello World — Godot Web
+# Godot Template — Web Preview
 
-A minimal Godot 4.7 project that renders **Hello, World!** and is auto-exported to
-the browser via CI.
+A minimal Godot 4.7 starter template for quickly prototyping browser games.
+Push to `main` and the game is auto-exported to WebAssembly and deployed to a
+live URL. It ships with a **Hello, World!** scene as a placeholder — replace it
+with your prototype.
 
-## Play it
+## Use this template
 
-Every push to `main` builds a Web (HTML5/WebAssembly) export and deploys it to
-GitHub Pages. The live URL appears in the **Deploy Web Preview** workflow run and
-under **Settings → Pages**.
+1. Create a new repo from this template (or copy the folder).
+2. Build your game in Godot 4.7.
+3. Push to `main` — CI exports the Web build and deploys it to GitHub Pages.
+
+The live URL appears in the **Deploy Web Preview** workflow run and under
+**Settings → Pages**.
 
 ## Structure
 
