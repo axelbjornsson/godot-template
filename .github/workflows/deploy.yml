@@ -16,17 +16,17 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  GODOT_VERSION: "4.3"
+  GODOT_VERSION: "4.7"
 
 jobs:
   build:
     name: Export Web build
     runs-on: ubuntu-latest
     container:
-      image: barichello/godot-ci:4.3
+      image: barichello/godot-ci:4.7
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install export templates
         run: |
@@ -42,7 +42,7 @@ jobs:
         run: touch build/web/.nojekyll
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: build/web
 
@@ -56,4 +56,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

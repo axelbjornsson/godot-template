@@ -1,6 +1,6 @@
 # Hello World — Godot Web
 
-A minimal Godot 4.3 project that renders **Hello, World!** and is auto-exported to
+A minimal Godot 4.7 project that renders **Hello, World!** and is auto-exported to
 the browser via CI.
 
 ## Play it
@@ -21,7 +21,7 @@ under **Settings → Pages**.
 
 ## Run locally
 
-1. Open the folder in Godot 4.3.
+1. Open the folder in Godot 4.7.
 2. Press **F5** to run, or **Project → Export** to produce a Web build.
 
 To test a Web export locally you need a server that sends the right headers
@@ -34,7 +34,7 @@ python3 -m http.server 8000
 
 ## CI notes
 
-- Builds run inside the `barichello/godot-ci:4.3` image (Godot + export templates).
+- Builds run inside the `barichello/godot-ci:4.7` image (Godot + export templates).
 - The Web preset has `variant/thread_support=false`, so it runs on GitHub Pages
   without cross-origin isolation (`COOP`/`COEP`) headers.
 - Bump `GODOT_VERSION` in the workflow **and** the image tag together when
