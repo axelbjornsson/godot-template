@@ -1,0 +1,12 @@
+# Godot 4 build artifacts
+.godot/
+build/
+*.tmp
+
+# Exported files
+export.cfg
+*.import
+
+# OS / editor
+.DS_Store
+Thumbs.db
